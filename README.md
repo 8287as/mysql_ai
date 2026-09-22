@@ -134,23 +134,7 @@ mysql-ai-studio/
 └── .gitignore
 ```
 
-## 屏幕截图
+个人邮箱：2737578594@qq.com
 
-> TODO：在下方替换为你的实际运行截图。
-> 建议：首页（需求输入）、SQL 编辑器 + 补全提示、AI 讲解面板、数据库浏览器。
 
-![image-20260922222708203](C:\Users\Lan\AppData\Roaming\Typora\typora-user-images\image-20260922222708203.png)
 
-## 开源协议
-
-本项目采用 [MIT License](LICENSE)。
-
-## 致谢
-
-- [DeepSeek API](https://api-docs.deepseek.com/zh-cn/) — AI 生成、判分、讲解
-- [SQLGlot](https://github.com/tobymao/sqlglot) — SQL 解析增强
-- [Express](https://expressjs.com/) · [mysql2](https://github.com/sidorares/node-mysql2) · [sql-formatter](https://github.com/sql-formatter-org/sql-formatter)
-
----
-
-> 本项目为个人学习工具，连接的是你自己的 MySQL 实例和 DeepSeek 账号，使用前请确保你有相应权限并注意数据安全。
