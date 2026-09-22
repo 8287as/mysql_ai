@@ -86,28 +86,6 @@ QueryCraft 会创建独立的 `sql_lab_*` 数据库，设计订单、客户等�
 └─────────────────┘      └─────────────────────┘
 ```
 
-## API 一览
-
-| 方法 | 路径 | 说明 |
-| --- | --- | --- |
-| GET | `/api/health` | 服务健康检查 |
-| POST | `/api/sql/format` | SQL 格式化 |
-| GET | `/api/sqlglot/health` | SQLGlot 侧车健康检查 |
-| POST | `/api/sqlglot/tokenize` | SQL 分词 |
-| POST | `/api/sqlglot/parse` | SQL AST 解析 |
-| POST | `/api/mysql/test` | 测试 MySQL 连接 |
-| POST | `/api/mysql/schema` | 获取数据库/表结构 |
-| POST | `/api/mysql/table` | 分页查看表数据 |
-| POST | `/api/mysql/query` | 执行 SQL（支持批量/事务/存储过程） |
-| POST | `/api/mysql/drop` | 删除库/表（需名称二次确认） |
-| POST | `/api/mysql/create-database` | 创建数据库 |
-| POST | `/api/lab/materialize` | 物化 AI 生成的练习库 |
-| POST | `/api/ai/test` | 测试 DeepSeek 连接 |
-| POST | `/api/ai/generate` | 生成练习 |
-| POST | `/api/ai/answer` | AI 判分 |
-| POST | `/api/ai/explain` | AI 讲解 |
-| POST | `/api/ai/chat` | AI 问答（连续追问） |
-
 ## 安全设计
 
 - **高危 SQL 拦截**：阻止 `DROP DATABASE`、权限管理、全局设置、`LOAD_FILE()` 文件导出等操作
